@@ -31,7 +31,7 @@ class Bot(Client):
         if Config.OWNER_ID != 0:
             try:
                 await self.send_message(
-                    text= "🇹🇷 Bot Restarted",
+                    text= "🇮🇳 Bot Restarted Made By @bangbrosowner",
                     chat_id=Config.OWNER_ID)
             except Exception as t:
                 LOGGER.error(str(t))
