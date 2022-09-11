@@ -38,7 +38,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         if Config.OWNER_ID != 0:
-            texto = f"\n\🇮🇳 Bot Restarted: {ReadableTime(time.time() - Config.botStartTime)}"
+            texto = "\🇮🇳 Bot Restarted: {ReadableTime(time.time() - Config.botStartTime)}"
             try:
                 await self.send_message(text= texto,chat_id=Config.OWNER_ID)
             except Exception as t:
