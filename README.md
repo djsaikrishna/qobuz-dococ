@@ -3,15 +3,16 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F&template=https://github.com/qobuz-dl/qobuz-dl-telegram-bot)
 
+## Premium account is required for the bot to work.
 
-
-## Commands for bot(set through @BotFather)
+## Commands Bot( @BotFather )
 
 ```
 start - start bot
 download - dl one link and multi link
 status - bot status
 log - log
+reset - restart bot
 
 ```
 1. **Installing requirements**
@@ -22,9 +23,7 @@ log - log
 
 2. **Set up config file**
 
-- config.py
-
-- Fill up variables:
+- Fill up variables config.py:
 
    - Mandatory variables:
    
@@ -38,9 +37,15 @@ log - log
         - `QOBUZ_QUAL`: Quality
         - `BOT_USERNAME`: Bot username not @
         - `LOG_CHANNEL`: Channel Id -100xxxx
+        
+        Heroku Restart Bot
+        
+        - `HEROKU_API_KEY`: Heroku Api Key
+        - `HEROKU_APP_NAME`: Heroku Name
+    
 
 
-🌿 Quality
+## Quality
 ```
   5:  MP3-320 Kbps
   6:  CD-16-bit/44,1 kHz
@@ -48,6 +53,13 @@ log - log
   27: 24-Bit Hi-Res/Upto 192 kHz
 ```
 
+## Support Link
+```
+Artist: https://open.qobuz.com/artist/43821
+Albüm:  https://open.qobuz.com/album/doldeure0459b
+Track:  https://open.qobuz.com/track/138731318
+
+```
 3. **Deploying on VPS Using Docker**
 
 - Start Docker daemon (skip if already running), if installed by snap then use 2nd command:
